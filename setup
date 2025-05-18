@@ -3,7 +3,7 @@
 set -euo pipefail # It is best practice to include this for improving error-message-handling (by making sure the script stops in case something fails)
 
 if ! command -v chezmoi >/dev/null; then
-    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:cromagnonaut/dotfiles-test.git
+    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:cromagnonaut/dotfiles-demo.git
 fi
 
 exit 0
